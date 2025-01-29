@@ -21,8 +21,13 @@ return {
       -- this setting is independent of vim.opt.timeoutlen
       delay = 0,
       icons = {
+        breadcrumb = '»', -- symbol used in the command line area to indicate a sequence of keys
+        separator = '→', -- symbol used to separate keys
+
         -- set icon mappings to true if you have a Nerd Font
-        mappings = vim.g.have_nerd_font,
+        mappings = true,
+        colors = true,
+        rules = {},
         -- If you are using a Nerd Font: set icons.keys to an empty table which will use the
         -- default which-key.nvim defined Nerd Font icons, otherwise define a string table
         keys = vim.g.have_nerd_font and {} or {
@@ -62,7 +67,7 @@ return {
         { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
         { '<leader>d', group = '[D]ocument' },
         { '<leader>r', group = '[R]ename' },
-        { '<leader>s', group = '[S]earch' },
+        { '<leader>f', group = '[F]ind' },
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
