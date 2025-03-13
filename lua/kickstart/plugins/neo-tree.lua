@@ -11,13 +11,22 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '<leader>e', ':Neotree toggle<CR>', desc = 'NeoTree reveal', silent = true },
+    {
+      '<leader>e',
+      function()
+        require('neo-tree.command').execute {
+          toggle = true,
+          position = 'left',
+        }
+      end,
+      desc = 'Buffers (root dir)',
+    },
   },
   opts = {
     filesystem = {
       window = {
         mappings = {
-          ['<leader>e'] = 'close_window',
+          ['\\'] = 'close_window',
         },
       },
     },
