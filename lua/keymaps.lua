@@ -44,5 +44,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
-
+-- Yank to clipboard and not default buffer
+vim.keymap.set({ 'x', 'n' }, 'y', '"+y', { silent = true })
 -- vim: ts=2 sts=2 sw=2 et
