@@ -13,7 +13,9 @@ Personal NeoVim config
 - **indent_blankline:** Show indentation ⚪ ⚪ ⚪ 
 - **mini:**
   - **mini.surround:** Surround words with () [] {}
-- **neo-tree:** File tree 📁🌲
+- **File Editors** 📁
+  - **neo-tree:** File tree 📁🌲
+  - **Oil:** Buffer like file editor 📜
 - **noice:** replaces message and cmdline UI 🎆
 - **snacks:**
     - **Dashboard:** Dashboard at nvim start
@@ -24,6 +26,7 @@ Personal NeoVim config
     - **statuscolumn:** Pretty status column
 - **telescope** 🔭
 - **todo-comments**
+- **File editors**
 - **treesitter** 🌳
 - **which-key:** Show availible commands❓
 
