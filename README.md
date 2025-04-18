@@ -1,15 +1,16 @@
 
-# Config
+# Config ⚙️
 Personal NeoVim config
 
-##Plugins##
-- Autopairs
+## Packet managers and LSP 📦
+- Lazy 💤
+- Mason 🗃️
+
+## Plugins
 - cmp
 - conform
-- debug
 - gitsigns
-- indent_line
-- lint
+- indent_blankline
 - lspconfig
 - mini
 - neo-tree
