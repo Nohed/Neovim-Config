@@ -50,5 +50,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.keymap.set({ 'x', 'n' }, 'y', '"+y', { silent = true })
 -- vim: ts=2 sts=2 sw=2 et
 --
-vim.keymap.set('n', '-', 'yygccp', { remap = true })
-vim.keymap.set('n', '<TAB>', 'gcc', { remap = true })
+vim.keymap.set('n', '-', 'yygccp', { remap = true, desc = 'Duplicate and comment line' }) -- comment line and copy it to below
+vim.keymap.set('n', '<TAB>', 'gcc', { remap = true, desc = 'Toggle comment on current line' }) -- Comment line
+vim.keymap.set('n', '<leader>cf', 'GVggy', { desc = '[C]opy [F]ile to clipboard' }) -- Copy file content to clipboard
